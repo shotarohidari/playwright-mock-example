@@ -10,7 +10,8 @@
     "test": "npx vitest",
     "lint": "eslint --ext .tsx,.ts src/",
     "format": "prettier --write \"**/*.+(js|json|yml|ts|tsx)\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test:e2e": "npx playwright test"
   },
   "lint-staged": {
     "*.tsx": [
@@ -21,6 +22,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
